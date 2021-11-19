@@ -74,12 +74,14 @@ namespace MathGame2
         {
             GenerateExercise();
         }
+
         private void GenerateExercise()
         {
             AnswerTB.Clear();
             Exercise.GenerateExercise();
             ExerciseLabel.Text = Exercise.TheExercise;
         }
+
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == (Keys.Enter))
@@ -146,6 +148,7 @@ namespace MathGame2
         {
             End();
         }
+
         private void End()
         {
             MainTimer.Enabled = false;
@@ -157,6 +160,22 @@ namespace MathGame2
                     $"Average time per question: {secondsPerQuestion} seconds", "Info",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void SkipButton_Click(object sender, EventArgs e)
+        {
+            AnswerTB.Text = Exercise.Answer.ToString(); // correct++ (+1 = 1)
+
+            // fix counters
+
+            // correct-- (-1 = 0)
+            correctCounter--;
+            CorrectCounterLabel.Text = correctCounter.ToString();
+
+            // wrong++ (+1 = 1)
+            wrongCounter++;
+            WrongCounterLabel.Text = wrongCounter.ToString();
+
         }
     }
 }

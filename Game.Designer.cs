@@ -57,6 +57,7 @@
             this.BackToMenuButton = new System.Windows.Forms.Button();
             this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.MainToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.SkipButton = new System.Windows.Forms.Button();
             this.StatusGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WrongPB)).BeginInit();
@@ -350,11 +351,23 @@
             this.MainTimer.Interval = 1000;
             this.MainTimer.Tick += new System.EventHandler(this.MainTimer_Tick);
             // 
+            // SkipButton
+            // 
+            this.SkipButton.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SkipButton.Location = new System.Drawing.Point(225, 146);
+            this.SkipButton.Name = "SkipButton";
+            this.SkipButton.Size = new System.Drawing.Size(67, 29);
+            this.SkipButton.TabIndex = 10;
+            this.SkipButton.Text = "Skip";
+            this.SkipButton.UseVisualStyleBackColor = true;
+            this.SkipButton.Click += new System.EventHandler(this.SkipButton_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 248);
+            this.Controls.Add(this.SkipButton);
             this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.SettingsGroupBox);
             this.Controls.Add(this.InputButton);
@@ -418,5 +431,6 @@
         private System.Windows.Forms.Button BackToMenuButton;
         private System.Windows.Forms.Timer MainTimer;
         private System.Windows.Forms.ToolTip MainToolTip;
+        private System.Windows.Forms.Button SkipButton;
     }
 }

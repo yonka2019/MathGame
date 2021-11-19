@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MathGame2
 {
@@ -47,11 +47,11 @@ namespace MathGame2
             int randomized_number2 = rnd.Next(numberType2[0], numberType2[1]);
 
             // get the final exercise (string) and his answer.
-            _exercise = randomized_number1.ToString() + randomized_operator.ToString() + randomized_number2.ToString();
+            _exercise = $"{randomized_number1} {randomized_operator} {randomized_number2}";
             _answer = CalculateAnswer(randomized_number1, randomized_operator, randomized_number2);
-            Console.WriteLine(_answer);
 
         }
+
         private static double CalculateAnswer(int num1, char oper, int num2)
         {
             switch (oper)
@@ -70,6 +70,7 @@ namespace MathGame2
                     return 0;
             }
         }
+
         public static double Answer
         {
             get
@@ -77,6 +78,7 @@ namespace MathGame2
                 return _answer;
             }
         }
+
         public static string TheExercise
         {
             get
@@ -84,6 +86,7 @@ namespace MathGame2
                 return _exercise;
             }
         }
+
         public static bool OKSettings
         {
             get
