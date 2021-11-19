@@ -176,6 +176,8 @@ namespace MathGame2
             wrongCounter++;
             WrongCounterLabel.Text = wrongCounter.ToString();
 
+            InputButton.PerformClick(); // simultes click (inputted right answer => simulates "correct")
+
         }
     }
 }

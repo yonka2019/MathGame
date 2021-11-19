@@ -41,10 +41,10 @@
             // MainLabel
             // 
             this.MainLabel.AutoSize = true;
-            this.MainLabel.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MainLabel.Location = new System.Drawing.Point(157, 9);
+            this.MainLabel.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainLabel.Location = new System.Drawing.Point(154, 12);
             this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(121, 28);
+            this.MainLabel.Size = new System.Drawing.Size(127, 30);
             this.MainLabel.TabIndex = 0;
             this.MainLabel.Text = "Math Game";
             // 
@@ -78,6 +78,7 @@
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.Size = new System.Drawing.Size(45, 45);
             this.SettingsButton.TabIndex = 1;
+            this.MainToolTip.SetToolTip(this.SettingsButton, "Settings");
             this.SettingsButton.UseVisualStyleBackColor = true;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
