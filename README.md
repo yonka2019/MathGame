@@ -1,4 +1,4 @@
 # Math Game
 
 # Preview
-![alt text](https://i.ibb.co/GW5vmY2/mathgame.png)
+![preview1](https://i.ibb.co/GW5vmY2/mathgame.png)
